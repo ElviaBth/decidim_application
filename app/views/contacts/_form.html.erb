@@ -12,22 +12,22 @@
   <% end %>
 
   <div class="field columns">
-    <%= form.text_field t(:name), class:"right inline", id:"right-label", placeholder:"Add your name"  %>
+    <%= form.text_field t(:name), class:"right inline", id:"right-label", placeholder:t("user_label_placeholder" ) %>
   </div>
 
   <div class="field columns">
-    <%= form.text_field t(:email), class:"right inline", id:"right-label", placeholder:"Type your emial" %>
+    <%= form.text_field t(:email), class:"right inline", id:"right-label", placeholder:t("email_label_placeholder") %>
   </div>
 
   <div class="field columns">
-    <%= form.text_field t(:subject), class:"right inline", id:"right-label", placeholder:"What is the subject" %>
+    <%= form.text_field t(:subject), class:"right inline", id:"right-label", placeholder:t("subject_label_placeholder") %>
   </div>
 
   <div class="field columns">
-    <%= form.text_area t(:message), class:"right inline", id:"right-label", placeholder:"write a message" %>
+    <%= form.text_area t(:message), class:"right inline", id:"right-label", placeholder:t("message_label_placeholder") %>
   </div>
 
   <div class="actions">
-    <%= form.submit "Submit"%>
+    <%= form.submit t("submit")%>
   </div>
 <% end %>
