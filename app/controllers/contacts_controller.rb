@@ -1,5 +1,6 @@
-class ContactsController < ApplicationController
+class ContactsController < Decidim::ApplicationController
   before_action :set_contact, only: [:show, :edit, :update, :destroy]
+  layout "layouts/decidim/application"
 
   # GET /contacts
   def index
