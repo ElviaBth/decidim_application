@@ -11,23 +11,23 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.text_field :name %>
+  <div class="field columns">
+    <%= form.text_field t(:name), class:"right inline", id:"right-label", placeholder:t("user_label_placeholder" ) %>
   </div>
 
-  <div class="field">
-    <%= form.text_field :email %>
+  <div class="field columns">
+    <%= form.text_field t(:email), class:"right inline", id:"right-label", placeholder:t("email_label_placeholder") %>
   </div>
 
-  <div class="field">
-    <%= form.text_field :subject %>
+  <div class="field columns">
+    <%= form.text_field t(:subject), class:"right inline", id:"right-label", placeholder:t("subject_label_placeholder") %>
   </div>
 
-  <div class="field">
-    <%= form.text_area :message %>
+  <div class="field columns">
+    <%= form.text_area t(:message), class:"right inline", id:"right-label", placeholder:t("message_label_placeholder") %>
   </div>
 
   <div class="actions">
-    <%= form.submit "Submit"%>
+    <%= form.submit t("submit")%>
   </div>
 <% end %>

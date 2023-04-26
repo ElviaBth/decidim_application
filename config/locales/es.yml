@@ -1,0 +1,20 @@
+es:
+  hello: "Hola mundo"
+  decidim:
+    admin:
+      menu:
+        contact: "Contactanos"
+  menu:
+    contact: "Contactanos"
+  contacts: 
+    new:
+      contact: "Contactanos"
+  name: "Nombre de usuario"
+  subject: "Asunto"
+  email: "Correo Electrónico"
+  message: "Mensaje"
+  submit: "Enviar"
+  user_label_placeholder: "Escribe tu nombre"
+  email_label_placeholder: "Escribe tu email"
+  subject_label_placeholder: "Cuál es el asunto?"
+  message_label_placeholder: "Escribe tu mensaje"
