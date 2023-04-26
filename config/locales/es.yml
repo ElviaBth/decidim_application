@@ -1,0 +1,15 @@
+es:
+  hello: "Hola mundo"
+  decidim:
+    admin:
+      menu:
+        contact: "Contactanos"
+  menu:
+    contact: "Contactanos"
+  contacts: 
+    new:
+      contact: "Contactanos"
+  name: "Nombre de usuario"
+  subject: "Asunto"
+  email: "Correo Electrónico"
+  message: "Mensaje"

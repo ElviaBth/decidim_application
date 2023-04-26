@@ -1,5 +1,11 @@
-<h1>Contact Us</h1>
-
-<%= render 'form', contact: @contact %>
-
-
+<% add_decidim_meta_tags(title: t("contact", scope: "menu")) %>
+<div class="small-10 small-centered columns">
+    <div class="card" style="width: 300px;">
+    <div class="card-divider">
+        <h4><%= t(".contact") %></h4>
+    </div>
+    <div class="card-section">
+        <%= render 'form', contact: @contact %>
+    </div>
+    </div>
+</div>

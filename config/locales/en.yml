@@ -31,4 +31,18 @@
 
 en:
   hello: "Hello world"
-  contact: "Contact us"
+  decidim:
+    admin:
+      menu:
+        contact: "Contact us"
+  menu:
+    contact: "Contact us"
+  contacts: 
+    new:
+      contact: "Contact us"
+  name: "User Name"
+  subject: "Subject"
+  email: "User Email"
+  message: "Message"
+
+

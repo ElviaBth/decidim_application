@@ -11,20 +11,20 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.text_field :name %>
+  <div class="field columns">
+    <%= form.text_field t(:name), class:"right inline", id:"right-label", placeholder:"Add your name"  %>
   </div>
 
-  <div class="field">
-    <%= form.text_field :email %>
+  <div class="field columns">
+    <%= form.text_field t(:email), class:"right inline", id:"right-label", placeholder:"Type your emial" %>
   </div>
 
-  <div class="field">
-    <%= form.text_field :subject %>
+  <div class="field columns">
+    <%= form.text_field t(:subject), class:"right inline", id:"right-label", placeholder:"What is the subject" %>
   </div>
 
-  <div class="field">
-    <%= form.text_area :message %>
+  <div class="field columns">
+    <%= form.text_area t(:message), class:"right inline", id:"right-label", placeholder:"write a message" %>
   </div>
 
   <div class="actions">
