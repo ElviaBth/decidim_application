@@ -18,7 +18,7 @@ module Admin
         # PATCH/PUT /contacts/1
         def update
             if @contact.update(contact_params)
-            redirect_to @contact, notice: 'Contact was successfully updated.'
+            redirect_to admin_contact_path(@contact), notice: 'Contact was successfully updated.'
             else
             render :edit
             end
@@ -27,7 +27,7 @@ module Admin
         # DELETE /contacts/1
         def destroy
             @contact.destroy
-            redirect_to contacts_url, notice: 'Contact was successfully destroyed.'
+            redirect_to admin_contacts_url, notice: 'Contact was successfully destroyed.'
         end
 
         private
