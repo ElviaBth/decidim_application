@@ -11,19 +11,6 @@ module Admin
         def show
         end
 
-        # GET /contacts/1/edit
-        def edit
-        end
-
-        # PATCH/PUT /contacts/1
-        def update
-            if @contact.update(contact_params)
-            redirect_to admin_contact_path(@contact), notice: t('message_notice_success_2')
-            else
-            render :edit
-            end
-        end
-
         # DELETE /contacts/1
         def destroy
             @contact.destroy

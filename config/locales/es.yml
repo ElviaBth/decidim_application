@@ -27,3 +27,4 @@ es:
   back: "Volver"
   contact_messages: "Mensajes de Contacto"
   edit_contact: "Editar Mensaje de Contacto"
+  error_email_invalid: "Escribe un correo electrónico válido."
