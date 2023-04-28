@@ -1,6 +1,6 @@
-<h1>Editing Contact</h1>
+<h1><%= t('edit_contact') %></h1>
 
 <%= render 'contacts/form', contact: @contact %>
 
-<%= link_to 'Show', admin_contact_path(@contact) %> |
-<%= link_to 'Back', admin_contacts_path %>
+<%= link_to t('show'), admin_contact_path(@contact), class: "button secondary" %> 
+<%= link_to t('back'), admin_contacts_path, class: "button secondary" %>

@@ -1,4 +1,5 @@
 class ContactsController < Decidim::ApplicationController
+  before_action :set_contact, only: [:show, :edit, :update, :destroy]
   layout "layouts/decidim/application"
 
   
@@ -13,11 +14,12 @@ class ContactsController < Decidim::ApplicationController
     @contact = Contact.new(contact_params)
 
     if @contact.save
-      redirect_to admin_contacts_path, notice: 'Contact was successfully created.'
+      redirect_to decidim_path, notice: t('message_notice_success_1')
     else
       render :new
     end
   end
+
 
   private
     # Use callbacks to share common setup or constraints between actions.
@@ -28,5 +30,6 @@ class ContactsController < Decidim::ApplicationController
     # Only allow a list of trusted parameters through.
     def contact_params
       params.require(:contact).permit(:name, :email, :subject, :message)
-    end
+    end 
+
 end

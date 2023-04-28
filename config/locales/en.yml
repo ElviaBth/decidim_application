@@ -49,5 +49,15 @@ en:
   email_label_placeholder: "Type your emial"
   subject_label_placeholder: "What is the subject"
   message_label_placeholder: "write a message"
+  message_notice_success_1: "Contact message was successfully created."
+  message_notice_success_2: "Contact message was successfully updated."
+  message_notice_success_3: "Contact was successfully destroyed."
+  show: "Show"
+  edit: "Edit"
+  destroy: "Delete"
+  back: "Back"
+  contact_messages: "Contact Messages"
+  edit_contact: "Edit Contact Message"
+
 
 

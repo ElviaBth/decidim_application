@@ -1,11 +1,11 @@
 module Admin
     class ContactsController < Decidim::Admin::ApplicationController
-        before_action :set_contact, only: [:show, :edit, :update, :destroy]
+      before_action :set_contact, only: [:show, :edit, :update, :destroy]
 
-        # GET /contacts
-        def index
+      # GET /contacts
+         def index
             @contacts = Contact.all
-        end
+         end    
 
         # GET /contacts/1
         def show
@@ -18,7 +18,7 @@ module Admin
         # PATCH/PUT /contacts/1
         def update
             if @contact.update(contact_params)
-            redirect_to admin_contact_path(@contact), notice: 'Contact was successfully updated.'
+            redirect_to admin_contact_path(@contact), notice: t('message_notice_success_2')
             else
             render :edit
             end
@@ -27,7 +27,7 @@ module Admin
         # DELETE /contacts/1
         def destroy
             @contact.destroy
-            redirect_to admin_contacts_url, notice: 'Contact was successfully destroyed.'
+            redirect_to admin_contacts_url, notice: t('message_notice_success_3')
         end
 
         private
@@ -39,8 +39,7 @@ module Admin
             # Only allow a list of trusted parameters through.
         def contact_params
             params.require(:contact).permit(:name, :email, :subject, :message)
-        end
-
+        end 
 
     end
 end

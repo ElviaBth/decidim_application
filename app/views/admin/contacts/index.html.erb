@@ -1,14 +1,14 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Contacts</h1>
+<h1><%= t('contact_messages') %></h1>
 
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Email</th>
-      <th>Subject</th>
-      <th>Message</th>
+      <th><%= t("name") %></th>
+      <th><%= t("email") %></th>
+      <th><%= t("subject") %></th>
+      <th><%= t("message") %></th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -20,9 +20,9 @@
         <td><%= contact.email %></td>
         <td><%= contact.subject %></td>
         <td><%= contact.message %></td>
-        <td><%= link_to 'Show', admin_contact_path(contact), class:"button secondary tiny" %></td>
-        <td><%= link_to 'Edit', edit_admin_contact_path(contact), class:"button secondary tiny" %></td>
-        <td><%= link_to 'Destroy', admin_contact_path(contact), method: :delete, data: { confirm: 'Are you sure?' }, class:"alert button tiny" %></td>
+        <td><%= link_to t('show'), admin_contact_path(contact), class:"button secondary tiny" %></td>
+        <td><%= link_to t('edit'), edit_admin_contact_path(contact), class:"button secondary tiny" %></td>
+        <td><%= link_to t('destroy'), admin_contact_path(contact), method: :delete, data: { confirm: 'Are you sure?' }, class:"alert button tiny" %></td>
       </tr>
     <% end %>
   </tbody>
