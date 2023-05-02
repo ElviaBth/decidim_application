@@ -1,6 +1,6 @@
 module Admin
     class ContactsController < Decidim::Admin::ApplicationController
-      before_action :set_contact, only: [:show, :edit, :update, :destroy]
+      before_action :set_contact, only: [:show, :destroy]
 
       # GET /contacts
          def index
@@ -22,11 +22,6 @@ module Admin
         def set_contact
             @contact = Contact.find(params[:id])
         end
-
-            # Only allow a list of trusted parameters through.
-        def contact_params
-            params.require(:contact).permit(:name, :email, :subject, :message)
-        end 
 
     end
 end

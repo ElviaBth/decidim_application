@@ -1,7 +1,9 @@
 class ContactsController < Decidim::ApplicationController
-  #before_action :set_contact, only: [:show, :edit, :update, :destroy]
   layout "layouts/decidim/application"
 
+  # GET /contacts
+  def index
+  end 
 
   # GET /contacts/new
   def new
@@ -21,11 +23,6 @@ class ContactsController < Decidim::ApplicationController
 
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_contact
-      @contact = Contact.find(params[:id])
-    end
-
     # Only allow a list of trusted parameters through.
     def contact_params
       params.require(:contact).permit(:name, :email, :subject, :message)

@@ -11,21 +11,20 @@
     </div>
   <% end %>
 
-  <div class="field columns">
-    <%= form.label t(:name) %>
-    <%= form.text_field :name, class:"right inline", id:"right-label", placeholder:t("user_label_placeholder" ) %>
+  <div class="field">
+    <%= form.text_field t(:name), name: "contact[name]", placeholder:t("user_label_placeholder" ) %>
   </div>
 
-  <div class="field columns">
-    <%= form.text_field :email, class:"right inline", id:"right-label", placeholder:t("email_label_placeholder") %>
+  <div class="field">
+    <%= form.text_field t(:email), name: "contact[email]", placeholder:t("email_label_placeholder") %>
   </div>
 
-  <div class="field columns">
-    <%= form.text_field :subject, class:"right inline", id:"right-label", placeholder:t("subject_label_placeholder") %>
+  <div class="field">
+    <%= form.text_field t(:subject), name: "contact[subject]", placeholder:t("subject_label_placeholder") %>
   </div>
 
-  <div class="field columns">
-    <%= form.text_area :message, class:"right inline", id:"right-label", placeholder:t("message_label_placeholder") %>
+  <div class="field">
+    <%= form.text_area t(:message), name: "contact[message]", placeholder:t("message_label_placeholder") %>
   </div>
 
   <div class="actions">
